@@ -1,0 +1,7 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<% if logged_in? %>
+ <% @decks.each do |deck| %>
+  <%= link_to deck.name, deck_path(deck) %>
+ <% end %>
+<% end %>

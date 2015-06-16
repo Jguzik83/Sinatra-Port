@@ -1,0 +1,17 @@
+<%= form_tag submit_answer_path do  %>
+  <%= params %><br/>
+  <%= text_field_tag :deck_id, params[:deck_id] %><br/>
+  <%= text_field_tag :round_id, params[:round_id] %><br/>
+  <%= text_field_tag :answer %><br/><br/>
+  <%= submit_tag 'Submit answer', class: 'btn btn-primary btn-lg' %>
+<% end %>
+
+
+
+
+
+
+  <!-- <form action="/decks/<%= @deck.id %>/round/<%= @round.id %>" method="post">
+    <input type="text" name="answer" placeholder="answer" id="answer"/><br><br>
+    <button type="submit" class="btn btn-primary btn-lg">Submit Answer</button>
+  </form> -->

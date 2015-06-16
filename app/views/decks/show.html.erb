@@ -1,0 +1,7 @@
+<div class="text-center">
+  <h2>Are you sure you want to play this game?</h2>
+  <div class="jumbotron">
+    <h2><%= link_to 'Yes', start_round_path({deck_id: @deck.id, round_id: @round.id})%> || <%= link_to 'No', decks_path %></h2>
+  </div>
+</div>
+<!-- <h2><a href="/decks/<%= @deck.id %>/round/<%= @round.id %>">Yes</a> | | <a href="/decks">No</a></h2> -->

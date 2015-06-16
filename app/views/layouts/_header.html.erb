@@ -1,0 +1,9 @@
+<% if logged_in? %>
+  <%= link_to 'Logout', logout_path, method: :delete %>
+<p>THIS IS MY NAV BAR PLACEHOLDER</p>
+
+<% else %>
+<p>You should login </p>
+<%= link_to 'Login', login_path %>
+<%= link_to 'Signup', signup_path %>
+<% end %>
